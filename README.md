@@ -42,6 +42,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 * `C-<vim motions>`: navigate between panes
 * `C-a c`: create new tab
 * `C-a <number>`: navigate between tabs
+* `C-a ,`: rename specific tab
 
 ## shell-setup
 
