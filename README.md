@@ -46,6 +46,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 - `C-a <p|n>`: navigate between tabs
 - `C-a ,`: rename specific tab
 - `C-a w`: navigate in all opened tabs for this session
+- `C-a [`: open copy mode using vi moviments (C-a to exit)
 
 ## shell-setup
 
