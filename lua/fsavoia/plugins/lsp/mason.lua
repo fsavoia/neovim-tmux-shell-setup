@@ -39,6 +39,7 @@ mason_null_ls.setup({
 	ensure_installed = {
 		"prettier", -- ts/js formatter
 		"black", -- python formatter
+		"ruff", -- rust formatter
 		"stylua", -- lua formatter
 		"mypy", -- python linter
 		"eslint_d", -- ts/js linter
