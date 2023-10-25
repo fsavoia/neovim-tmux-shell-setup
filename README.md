@@ -35,6 +35,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### Commands
 
+- `C-a r`: reload configuration
 - `C-a I`: install plugin
 - `C-a s`: naviagate in opened sessions
 - `C-a -`: split horizontally
