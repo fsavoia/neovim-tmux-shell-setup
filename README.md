@@ -35,16 +35,16 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### Commands
 
-* `C-a I`: install plugin
-* `C-a s`: naviagate in opened sessions
-* `C-a -`: split horizontally
-* `C-a |`: split vertically
-* `C-<vim motions>`: navigate between panes
-* `C-a c`: create new tab
-* `C-a <number>`: navigate between tabs
-* `C-a <p|n>`: navigate between tabs 
-* `C-a ,`: rename specific tab
-* `C-a w`: navigate in all opened tabs for this session
+- `C-a I`: install plugin
+- `C-a s`: naviagate in opened sessions
+- `C-a -`: split horizontally
+- `C-a |`: split vertically
+- `C-<vim motions>`: navigate between panes
+- `C-a c`: create new tab
+- `C-a <number>`: navigate between tabs
+- `C-a <p|n>`: navigate between tabs
+- `C-a ,`: rename specific tab
+- `C-a w`: navigate in all opened tabs for this session
 
 ## shell-setup
 
@@ -52,6 +52,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 1. Install [ble.sh](https://github.com/akinomyoga/ble.sh)
 2. Install [bat](https://github.com/sharkdp/bat)
+3. Install [colorls](https://github.com/athityakumar/colorls) # Only MacOS
 
 ### Setup
 
