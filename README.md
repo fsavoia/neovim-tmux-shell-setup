@@ -36,10 +36,11 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ### Commands
 
 * `C-a I`: install plugin
-* `C-a S`: naviagate in sessions
+* `C-a s`: naviagate in sessions
 * `C-a -`: split horizontally
 * `C-a |`: split vertically
 * `C-<vim motions>`: navigate between panes
+* `C-a c`: create new tab
 
 ## shell-setup
 
