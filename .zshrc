@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # Custom aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
-alias ll="colorls -ltrh"
+alias ll="clear"
 alias l="colorls -ltrh"
 alias la="colorls -ltrha"
 alias python="python3"
