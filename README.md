@@ -2,11 +2,9 @@
 
 This is my setup to work vim neovim/vim and Python. It uses black as a formatter, mypy as a linter and pyright as a language server. Your setup will look like this, see this print error:
 
-<image>
+![neovim_screenshot](/images/image1.png)
 
-Auto complete for Python, files and etc.
-
-<image>
+It has auto complete for Python, files and etc.
 
 ## Pre-requisite
 
@@ -16,4 +14,4 @@ Auto complete for Python, files and etc.
 ## Setup
 
 1. Open and save the file `~/.config/nvim/lua/fsavoia/plugins-setup.lua`
-2. Open neovim and rum `:Mason` and wait until everything is installed 
+2. Open neovim and rum `:Mason` and wait until everything is installed
