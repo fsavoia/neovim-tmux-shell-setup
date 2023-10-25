@@ -10,6 +10,7 @@ It has auto complete for Python, files and etc.
 
 1. Clone this repository
 2. Change the name fsavoia for you username
+3. Instal [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 
 ### Setup
 
@@ -20,7 +21,9 @@ It has auto complete for Python, files and etc.
 
 ### Pre-requisite
 
-1. Install tpm (tmux plugin manager)
+1. Install [tmux](https://github.com/tmux/tmux/wiki/Installing)
+
+2. Install tpm (tmux plugin manager)
 
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -35,3 +38,15 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 * `C-a S`: naviagate in sessions
 * `C-a -`: split horizontally
 * `C-a |`: split vertically
+
+## shell-setup
+
+### Pre-requisite
+
+1. Install [ble.sh](https://github.com/akinomyoga/ble.sh)
+2. Install [bat](https://github.com/sharkdp/bat)
+
+### Setup
+
+1. Copy and save `~/.blerc` in your home directory
+2. Copy and paste `~/.bashrc` ow `.zshrc` in your home directory
