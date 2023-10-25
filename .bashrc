@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 
-alias ll="ls -ltrh"
+alias ll="clear"
 alias l="ls -ltrh"
 alias la="ls -ltrah"
 alias python="python3"
