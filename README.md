@@ -41,6 +41,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 * `C-a |`: split vertically
 * `C-<vim motions>`: navigate between panes
 * `C-a c`: create new tab
+* `C-a <number>`: navigate between tabs
 
 ## shell-setup
 
