@@ -122,6 +122,7 @@ alias py="python3"
 alias vim="/usr/share/nvim-linux64/bin/nvim"
 alias vi="/usr/share/nvim-linux64/bin/nvim"
 alias cat='bat --theme=Dracula --italic-text=always'
+alias cls="clear"
 
 source /etc/profile.d/bash_completion.sh
 
