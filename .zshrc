@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # Custom aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
-alias ll="clear"
+alias ll="colorls -ltrh"
 alias l="colorls -ltrh"
 alias la="colorls -ltrha"
 alias python="python3"
@@ -131,3 +131,7 @@ eval "$(rbenv init --no-rehash -)"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+# Shell completion configuration for the Click Python package
+command -v rstuf > /dev/null 2>&1 && eval "$(_RSTUF_COMPLETE=zsh_source rstuf)"

@@ -1,21 +1,13 @@
 ## neovim-setup
 
-This is my setup to work vim neovim/vim and Python. It uses black as a formatter, mypy as a linter and pyright as a language server. Your setup will look like this, see this print error:
-
-![neovim_screenshot](/images/image1.png)
-
-It has auto complete for Python, files and etc.
-
 ### Pre-requisite
 
 1. Clone this repository
-2. Change the name fsavoia for you username
-3. Instal [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+2. Instal [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 
 ### Setup
 
-1. Open and save the file `~/.config/nvim/lua/fsavoia/plugins-setup.lua`
-2. Open neovim and rum `:Mason` and wait until everything is installed
+1. Copy nvim/.config/nvim in your home directory/.config/nvim
 
 ## tmux-setup
 
