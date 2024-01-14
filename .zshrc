@@ -118,6 +118,7 @@ alias vi="nvim"
 alias dev="cd ~/Dev"
 alias cat='bat --theme=Dracula --italic-text=always'
 alias cls="clear"
+alias gups="git checkout main && git fetch upstream && git merge upstream/main && git push"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
