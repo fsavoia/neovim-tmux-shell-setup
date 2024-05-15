@@ -23,6 +23,7 @@ return {
 					["cmp.entry.get_documentation"] = true,
 				},
 			},
+
 			-- you can enable a preset for easier configuration
 			presets = {
 				bottom_search = true, -- use a classic bottom cmdline for search
@@ -34,6 +35,9 @@ return {
 			-- cmdline = {
 			--     view = "cmdline",
 			-- },
+		})
+		require("notify").setup({
+			background_colour = "#000000",
 		})
 	end,
 }
