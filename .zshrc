@@ -15,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -77,7 +77,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(
+    git
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,36 +106,102 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Custom aliases
+
+# CUSTOM SETTINGS
+# -----------------
+
+# BAT
+export PATH="$PATH:/home/fsavoia/.cargo/bin/"
+# export BAT_THEME=tokyonight_night
+export BAT_THEME="Catppuccin Mocha"
+alias cat='bat --style=plain --paging=never'
+
+# FZF
+# Use ( as the trigger sequence instead of the default **
+export FZF_COMPLETION_TRIGGER='&'
+
+export PATH="$PATH:/home/fsavoia/.fzf/bin/"
+alias f="fzf"
+
+# --- setup fzf theme ---
+fg="#CBE0F0"
+bg="#011628"
+bg_highlight="#143652"
+purple="#B388FF"
+blue="#06BCE4"
+cyan="#2CF9ED"
+
+export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan} --height 60% --border"
+
+
+_fzf_comprun() {
+  local command=$1
+  shift
+
+  case "$command" in
+    cd)           fzf --preview 'eza --tree --color=always {} | head -200'   "$@" ;;
+    export|unset) fzf --preview "eval 'echo \$'{}"         "$@" ;;
+    ssh)          fzf --preview 'dig {}'                   "$@" ;;
+    *)            fzf --preview 'bat -n --color=always {}' "$@" ;;
+  esac
+}
+
+
+eval "$(fzf --zsh)"
+
+# Terminal
+alias vim="/usr/share/nvim-linux64/bin/nvim"
+alias vi="/usr/share/nvim-linux64/bin/nvim"
 alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
-alias ll="colorls -ltrh"
-alias l="colorls -ltrh"
-alias la="colorls -ltrha"
-alias python="python3"
-alias py="python3"
-alias pip="pip3"
-alias eng="ssh -i ~/.ssh/id_rsa fsavoia@ein1-fsavoi-u20.fsd.forescout.com"
-alias vim="nvim"
-alias vi="nvim"
-alias dev="cd ~/Dev"
-alias cat='bat --theme=Dracula --italic-text=always'
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias zreload="source ~/.zshrc"
 alias cls="clear"
-alias gups="git checkout main && git fetch upstream && git merge upstream/main && git push"
+alias cdvim="cd ~/.config/nvim"
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# ls 
+# alias ll='eza --long --sort=modified --git --icons'
+alias l='eza --long --sort=modified --git --icons'
+alias la='eza --long --sort=modified --git --icons --all'
+
+# Python
+alias pip=pip3
+alias py=python3
+alias python=python3
+
+# Forescout SSH
+alias eng="ssh -i ~/.ssh/id_rsa fsavoia@ein1-fsavoi-u20.fsd.forescout.com"
+alias eng-api="sudo ssh -i /Users/fsavoia/.ssh/id_rsa -L 80:ein1-fsavoi-u20:5000 fsavoia@ein1-fsavoi-u20.fsd.forescout.com"
+alias eng-docs="sudo ssh -i /Users/fsavoia/.ssh/id_rsa -L 80:ein1-fsavoi-u20:8000 fsavoia@ein1-fsavoi-u20.fsd.forescout.com"
+alias eng-ssl="sudo ssh -i /Users/fsavoia/.ssh/id_rsa -L 443:ein1-fsavoi-u20:4443 fsavoia@ein1-fsavoi-u20.fsd.forescout.com"
+alias client="cd otbu-upserv-client"
+alias server="cd otbu-upserv-server"
+alias cli="cd otbu-upserv-cli"
+alias cicd="cd otbu-upserv-cicd"
+alias fs="sudo /home/fsavoia/.pyenv/shims/forescout-edge-update"
+# alias forescout-edge-update="sudo /home/fsavoia/.pyenv/shims/forescout-edge-update"
+export PATH="$PATH:/home/fsavoia/.pyenv/shims/"
+
+# GIT
+alias gs="git switch"
+alias s="git status -s"
+alias lz="lazygit"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init --no-rehash -)"
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+
+# TMUX
+alias ta="tmux attach -t"
+alias tl="tmux ls"
+alias td="tmux detach"
+alias tk="tmux kill-session -t"
+alias tn="tmux new-session -s"
 
 
-# Shell completion configuration for the Click Python package
-command -v rstuf > /dev/null 2>&1 && eval "$(_RSTUF_COMPLETE=zsh_source rstuf)"
+alias pipenv="/home/fsavoia/.pyenv/shims/pipenv"

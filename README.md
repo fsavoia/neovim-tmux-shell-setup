@@ -27,28 +27,23 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### Commands
 
-- `C-a r`: reload configuration
-- `C-a I`: install plugin
-- `C-a s`: naviagate in opened sessions
-- `C-a -`: split horizontally
-- `C-a |`: split vertically
+- `C-s r`: reload configuration
+- `C-s I`: install plugin
+- `C-s s`: naviagate in opened sessions
+- `C-s -`: split horizontally
+- `C-s |`: split vertically
 - `C-<vim motions>`: navigate between panes
-- `C-a c`: create new tab
-- `C-a <number>`: navigate between tabs
-- `C-a <p|n>`: navigate between tabs
-- `C-a ,`: rename specific tab
-- `C-a w`: navigate in all opened tabs for this session
-- `C-a [`: open copy mode using vi moviments (C-a to exit)
+- `C-s c`: create new tab
+- `C-s <number>`: navigate between tabs
+- `C-s <p|n>`: navigate between tabs
+- `C-s ,`: rename specific tab
+- `C-s w`: navigate in all opened tabs for this session
+- `C-s [`: open copy mode using vi moviments (C-s to exit)
 
 ## shell-setup
 
 ### Pre-requisite
 
-1. Install [ble.sh](https://github.com/akinomyoga/ble.sh)
-2. Install [bat](https://github.com/sharkdp/bat)
-3. Install [colorls](https://github.com/athityakumar/colorls) # Only MacOS
+1. Install [bat](https://github.com/sharkdp/bat)
 
 ### Setup
-
-1. Copy and save `~/.blerc` in your home directory
-2. Copy and paste `~/.bashrc` ow `.zshrc` in your home directory
