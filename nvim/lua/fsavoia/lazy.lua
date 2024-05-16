@@ -53,3 +53,15 @@ map("i", "<C-l>", SuggestOneWord, { expr = true, remap = false })
 
 -- disable tabline (:set showtabline=0)
 vim.opt.showtabline = 0
+
+vim.g.clipboard = {
+	name = "OSC 52",
+	copy = {
+		["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+		["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+	},
+	paste = {
+		["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+		["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+	},
+}
