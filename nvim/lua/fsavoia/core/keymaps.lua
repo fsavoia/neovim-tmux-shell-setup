@@ -57,3 +57,11 @@ keymap.set("n", "<C-p>", "<cmd>bp<CR>", { desc = "Go to previous buffer" })
 keymap.set("n", "<C-n>", "<cmd>bn<CR>", { desc = "Go to next buffer" })
 keymap.set("n", "<C-b>", "<cmd>bl<CR>", { desc = "Go back to the last buffer" })
 keymap.set("n", "<C-x>", "<cmd>bd<CR>", { desc = "Close current buffer" })
+
+-- files
+vim.api.nvim_set_keymap("n", "QQ", ":q!<enter>", { noremap = false })
+vim.api.nvim_set_keymap("n", "QA", ":qa!<enter>", { noremap = false })
+vim.api.nvim_set_keymap("n", "XX", ":x!<enter>", { noremap = false })
+
+-- Noice (dismiss)
+vim.api.nvim_set_keymap("n", "<leader>nn", ":Noice dismiss<CR>", { noremap = true })

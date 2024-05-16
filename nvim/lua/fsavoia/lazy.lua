@@ -32,8 +32,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
--- highlight Normal guibg=NONE ctermbg=NONE
--- highlight NonText guibg=NONE ctermbg=NONE
+-- enable transparent background
 vim.api.nvim_exec(
 	[[
         hi Normal guibg=NONE ctermbg=NONE
@@ -41,7 +40,7 @@ vim.api.nvim_exec(
     ]],
 	false
 )
-
+--
 -- Copilot integration with nvim-copilot
 local function SuggestOneWord()
 	local suggestion = vim.fn["copilot#Accept"]("")
@@ -51,3 +50,6 @@ end
 
 local map = vim.keymap.set
 map("i", "<C-l>", SuggestOneWord, { expr = true, remap = false })
+
+-- disable tabline (:set showtabline=0)
+vim.opt.showtabline = 0

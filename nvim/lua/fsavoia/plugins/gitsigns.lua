@@ -23,6 +23,13 @@ return {
 				"<cmd>lua require('gitsigns').toggle_current_line_blame()<CR>",
 				{ desc = "[G]it [T]oggle current line blame" }
 			),
+			vim.keymap.set(
+				"n",
+				"<leader>gd",
+				"<cmd>lua require('gitsigns').diffthis()<CR>",
+				{ desc = "[G]it [D]iff this" }
+			),
+			vim.keymap.set("n", "<leader>gf", "<cmd>Git<CR>", { desc = "[G]it [F]ugitive" }),
 
 			signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
 			numhl = false, -- Toggle with `:Gitsigns toggle_numhl`

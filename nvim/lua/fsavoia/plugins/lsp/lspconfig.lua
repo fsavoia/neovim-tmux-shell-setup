@@ -38,8 +38,8 @@ return {
 				opts.desc = "Black Python formatting"
 				keymap.set("n", "<leader>fm", ":silent !black %<CR>") -- black python formatting
 
-				opts.desc = "Show Buffer Symbols"
-				keymap.set("n", "<leader>bs", "<cmd>Telescope lsp_document_symbols<CR>", opts) -- show buffer symbols
+				opts.desc = "[F]ind Buffer Symbols@"
+				keymap.set("n", "<leader>f@", "<cmd>Telescope lsp_document_symbols<CR>", opts) -- show buffer symbols
 
 				opts.desc = "Go to declaration"
 				keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
