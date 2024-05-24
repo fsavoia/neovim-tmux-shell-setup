@@ -25,9 +25,9 @@ return {
 			),
 			vim.keymap.set(
 				"n",
-				"<leader>gd",
+				"<leader>gi",
 				"<cmd>lua require('gitsigns').diffthis()<CR>",
-				{ desc = "[G]it [D]iff this" }
+				{ desc = "[G]it D[i]ff this" }
 			),
 			vim.keymap.set("n", "<leader>gf", "<cmd>Git<CR>", { desc = "[G]it [F]ugitive" }),
 

@@ -30,6 +30,11 @@ keymap.set("v", ">", ">gv")
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
+-- copy to system clipboard
+vim.api.nvim_set_keymap("n", "y", '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "y", '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "Y", '"+Y', { noremap = true, silent = true })
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement

@@ -33,6 +33,7 @@ return {
 				"tailwindcss",
 				"svelte",
 				"lua_ls",
+				"gopls",
 				"graphql",
 				"emmet_ls",
 				"prismals",
@@ -47,8 +48,11 @@ return {
 				"eslint_d", -- js linter
 				"mypy", -- python linter
 				"flake8", -- python linter
+				"gofumpt", -- go formatter
+				"goimports", -- go formatter
 				"black", -- python formatter
 				"isort", -- python formatter
+				"golangci-lint-langserver", -- golangci-lint langserver
 			},
 		})
 	end,

@@ -42,7 +42,7 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
 -- clipboard
--- opt.clipboard:append("unnamed") -- use system clipboard as default register
+-- opt.clipboard("unnamed") -- use system clipboard as default register
 -- opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 
 -- split windows
@@ -54,11 +54,6 @@ opt.swapfile = false
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 opt.mouse = "a"
-
--- Sync clipboard between OS and Neovim.
---  Remove this option if you want your OS clipboard to remain independent.
---  See `:help 'clipboard'`
-opt.clipboard = "unnamedplus"
 
 -- Enable break indent
 opt.breakindent = true
