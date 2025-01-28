@@ -1,0 +1,328 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.lineHeight": 1.8,
+  "editor.rulers": [79],
+  "apc.electron": {
+    "trafficLightPosition": {
+      "x": 11,
+      "y": 10
+    },
+    "backgroundColor": "rgba(255, 255, 255, .1)",
+    "vibrancy": "sidebar",
+    "transparent": true,
+    "visualEffectState": "active",
+    "titleBarStyle": "hidden",
+    "frame": false
+  },
+  "apc.header": {
+    "height": 38,
+    "fontSize": 16
+  },
+  "apc.listRow": {
+    "height": 27,
+    "fontSize": 15
+  },
+  "indentRainbow.indicatorStyle": "light",
+  "explorer.compactFolders": false,
+  "terminal.integrated.fontSize": 13,
+  "editor.fontSize": 14,
+  "explorer.confirmDragAndDrop": false,
+  "json.schemas": [],
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "editor.formatOnSave": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.preserveFocus": false,
+  "code-runner.executorMap": {
+    "python": "clear && python3"
+    // "sqlite": "sqlite3 /opt/data/database.db <"
+  },
+  "yaml.validate": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "redhat.telemetry.enabled": true,
+  "editor.wordWrap": "on",
+  "editor.suggest.showMethods": true,
+  "editor.suggest.preview": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.snippetSuggestions": "top",
+  "python.analysis.typeCheckingMode": "strict",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "isort.args": ["--profile", "black"],
+  "python.languageServer": "Pylance",
+  "black-formatter.args": ["--line-length", "79"],
+  "python.testing.unittestEnabled": false,
+  "files.exclude": {
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/.git": true,
+    ".vscode": true
+    // "node_modules": true
+  },
+  "files.associations": {
+    "*.html": "html",
+    "**/templates/*.html": "django-html",
+    "**/templates/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "cSpell.language": "en,pt",
+  // "python.defaultInterpreterPath": "python3",
+  "editor.lineNumbers": "relative",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": true,
+    "python": true
+  },
+  "cSpell.userWords": [
+    "activesensor",
+    "aiofiles",
+    "ansi",
+    "ansible",
+    "apscheduler",
+    "artifactory",
+    "ARTIFACTVERSION",
+    "autoflush",
+    "autouse",
+    "bnext",
+    "bprevious",
+    "capsys",
+    "codebases",
+    "colorlog",
+    "commandcenter",
+    "compability",
+    "conds",
+    "cprint",
+    "DEPLOYERTYPE",
+    "DESCRITPTION",
+    "diskspace",
+    "dnsname",
+    "docstrings",
+    "dotenv",
+    "dpkg",
+    "dundie",
+    "dynaconf",
+    "ecdsa",
+    "englab",
+    "extravars",
+    "eyeinspect",
+    "fakeapi",
+    "fastapi",
+    "forcelist",
+    "forescout",
+    "freespace",
+    "freezegun",
+    "Geldropseweg",
+    "geteuid",
+    "glogging",
+    "gnupg",
+    "gunicorn",
+    "hrules",
+    "icsp",
+    "keepalive",
+    "levelname",
+    "linux",
+    "metavars",
+    "missingok",
+    "mydatetime",
+    "myname",
+    "nginx",
+    "nics",
+    "nids",
+    "NIDS",
+    "nodup",
+    "noexec",
+    "nohl",
+    "notifempty",
+    "nullable",
+    "otbu",
+    "outdent",
+    "pkcs",
+    "PKCS",
+    "poolclass",
+    "prettytable",
+    "Publised",
+    "pydantic",
+    "readinesschecks",
+    "reponame",
+    "rstuf",
+    "Savoia",
+    "sdconsole",
+    "sessionmaker",
+    "silentdefense",
+    "snapshotname",
+    "sqlalchemy",
+    "sqlite",
+    "sqlmodel",
+    "TASKSTATUS",
+    "termcolor",
+    "Terrafriend",
+    "tracebacks",
+    "typer",
+    "upserv",
+    "usefixtures"
+  ],
+  "explorer.confirmDelete": false,
+  "terminal.integrated.copyOnSelection": true,
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font",
+  "git.confirmSync": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "symbols.hidesExplorerArrows": false,
+  "update.mode": "manual",
+  "remote.extensionKind": {
+    "GitHub.copilot": ["ui"],
+    "GitHub.copilot-chat": ["ui"]
+  },
+  "snyk.advanced.cliPath": "/Users/fsavoia/Library/Application Support/snyk-ls/snyk-macos",
+  "snyk.yesWelcomeNotification": false,
+  "terminal.integrated.scrollback": 2000,
+  "snyk.trustedFolders": [
+    "/Users/fsavoia/Dev/ArjanCodes",
+    "/Users/fsavoia/Dev/Go",
+    "/Users/fsavoia/Downloads"
+  ],
+  "workbench.colorTheme": "Python Dark Theme",
+  "go.toolsManagement.autoUpdate": true,
+  "editor.renderLineHighlight": "gutter",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.autoindent": true,
+  // open in insert mode
+  // "vim.startInInsertMode": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // split in a new buffer vertically and horizontally
+    { "before": ["leader", "s", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s", "h"], "commands": [":split"] },
+    // close a buffer
+    { "before": ["leader", "s", "x"], "commands": [":q"] },
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+    // navigate in panes
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // open file (fuzzy finder)
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    // open and close file explorer (toggle)
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    // open and close terminal (toggle)
+    {
+      "before": ["leader", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    // format document
+    {
+      "before": ["leader", "f", "d"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    // show definition preview hover with shift + k
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    // clean search highlights with escape (nohl)
+    { "before": ["<Esc>"], "commands": [":nohl"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "vim.insertModeKeyBindings": [
+    // press jk to exit insert mode
+    { "before": ["j", "k"], "commands": ["extension.vim_escape"] }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "security.promptForRemoteFileProtocolHandling": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "gitlens.mode.active": "zen",
+  "breadcrumbs.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "markdown-preview-enhanced.liveUpdate": false,
+  "snyk.folderConfigs": [
+    {
+      "folderPath": "",
+      "baseBranch": ""
+    }
+  ],
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "makefile.configureOnOpen": true
+}
